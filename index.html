@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HE IS WATCHING</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+	<body>
+	<div class="background">
+		<main class="main-content">
+			<div class="heading-container">
+				<h1>In your nightmare he asks you questions.....</h1>
+				<h2>Think carefully</h2>
+				<img src="/01-004.vecna-cult-symbol.png" alt="hand and eye of Vecna" class="image">
+			</div>
+			<div class="form-container">
+				<form id="questionnaireForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+					<label for="name">Who are you?</label>
+					<input type="text" id="name" name="name" required>
+					
+					<label for="location">Where are you?</label>
+					<input type="text" id="location" name="location" required>
+					
+					<label for="fight">Who  or what do you fight for?</label>
+					<input type="text" id="fight" name="fight" required>
+					
+					<label for="secret">What is a <span id="secret-word">secret</span> that you don't want others to know?</label>
+					<input id="text" name="secret" name="secret" required></input>
+					
+					<button type="submit">Submit to his will</button>
+				</form>
+
+				<audio autoplay loop>
+					<source src="/ANOTHER HIM.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+
+
+			</div>
+				<script src="script.js"></script>
+		</main>
+	</div>
+</body>
+
+</html>

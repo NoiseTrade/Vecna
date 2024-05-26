@@ -1,0 +1,102 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* body { 
+    background: rgb(52,29,78);
+    background: linear-gradient(162deg, rgba(52,29,78,1) 0%, rgba(97,94,168,1) 50%, rgba(210,82,123,1) 100%);
+
+} */
+
+body {
+	background: linear-gradient(-45deg, rgba(52,29,78,1) 0%, rgba(97,94,168,1) 50%, rgba(210,82,123,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+p, label { 
+    color: goldenrod;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+h1, h2 {
+    color: goldenrod;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 700;
+}
+
+
+.heading-container { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+.form-container { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 600px; 
+    margin: auto;
+
+    & button {
+        font-family: "MedievalSharp", cursive;
+        color: goldenrod;
+        background: transparent;
+        margin-top: 20px; 
+        padding: 10px 20px; 
+    }
+
+    & label {
+        font-size: 20px;
+        display: block; 
+        margin-top: 10px; 
+    }
+
+
+    & input {
+        width: 100%; 
+        padding: 8px; 
+        margin-top: 5px;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 1px solid goldenrod;
+
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+            width: 100%; 
+            padding: 8px; 
+            margin-top: 5px;
+
+        }
+    }
+}
