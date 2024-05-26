@@ -20,3 +20,7 @@ document.querySelector('.image').addEventListener('click', showMessage1);
 }
 
 document.querySelector('#secret-word').addEventListener('click', showMessage2);
+
+window.onload = function() {
+	document.getElementById("background-audio").play();
+}

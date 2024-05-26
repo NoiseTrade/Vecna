@@ -21,30 +21,29 @@
 			<div class="form-container">
 				<form id="questionnaireForm" action="https://formspree.io/f/mrgnvrpv" method="POST">
 					<label for="name">Who are you?</label>
-					<input type="text" id="name" name="name" required>
+					<input type="text" id="name" name="Who are you?" required>
 					
 					<label for="location">Where are you?</label>
-					<input type="text" id="location" name="location" required>
+					<input type="text" id="location" name="Where are you?" required>
 					
 					<label for="fight">Who  or what do you fight for?</label>
-					<input type="text" id="fight" name="fight" required>
+					<input type="text" id="fight" name="Who  or what do you fight for?" required>
 					
 					<label for="secret">What is a <span id="secret-word">secret</span> that you don't want others to know?</label>
-					<input id="text" name="secret" name="secret" required></input>
+					<input id="text" name="secret" name="What is a secret that you don't want others to know?" required></input>
 					
 					<button type="submit">Submit to his will</button>
 				</form>
-
-				<audio autoplay loop>
-					<source src="ANOTHER HIM.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
-
-
 			</div>
 				<script src="script.js"></script>
 		</main>
 	</div>
+
+	<audio id="background-audio" loop>
+		<source src="him.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
 </body>
 
 </html>
