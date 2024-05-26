@@ -94,3 +94,16 @@ h1, h2 {
         }
     }
 }
+
+#audio-control {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #toggleAudio {
+    display: none;
+  }

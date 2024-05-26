@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('questionnaireForm');
+  const audio = document.getElementById('background-audio');
+  const audioControlButton = document.getElementById('audio-control');
+  const playPauseIcon = document.getElementById('play-pause-icon');
 
   // Form submission handler
   form.addEventListener('submit', function(event) {
@@ -43,8 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.querySelector('#secret-word').addEventListener('click', showMessage2);
 
-  // Play background audio on page load
-  window.onload = function() {
-    document.getElementById("background-audio").play();
-  };
+  // Play/Pause background audio
+  audioControlButton.addEventListener('click', function() {
+    if (audio.paused) {
+      audio.play();
+      playPauseIcon.classList.remove('fa-play');
+      playPauseIcon.classList.add('fa-pause');
+    } else {
+      audio.pause();
+      playPauseIcon.classList.remove('fa-pause');
+      playPauseIcon.classList.add('fa-play');
+    }
+  });
 });
