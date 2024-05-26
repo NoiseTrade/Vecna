@@ -4,7 +4,7 @@ document.getElementById('questionnaireForm').addEventListener('submit', function
 
   function showMessage1() {
 		const message = document.createElement('p');
-		message.textContent = 'Keep looking for secrets. They bring power';
+		message.textContent = 'Keep looking for secrets. They bring power.';
 		document.body.appendChild(message);
 		document.querySelector('.image').removeEventListener('click', showMessage1);
 }
