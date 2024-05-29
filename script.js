@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     message.textContent = 'Keep looking for secrets. They bring power.';
     document.body.appendChild(message);
     document.querySelector('.image').removeEventListener('click', showMessage1);
+    window.scrollTo(0,document.body.scrollHeight);
   }
 
   document.querySelector('.image').addEventListener('click', showMessage1);
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     message.textContent = 'One of the mages is not what they seem.';
     document.body.appendChild(message);
     document.querySelector('#secret-word').removeEventListener('click', showMessage2);
+    window.scrollTo(0,document.body.scrollHeight);
   }
 
   document.querySelector('#secret-word').addEventListener('click', showMessage2);
