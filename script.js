@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Display a message when the secret word is clicked
   function showMessage2() {
     const message = document.createElement('p');
-    message.textContent = 'One of the mages are not what they seem.';
+    message.textContent = 'Dont trust Kas.';
     document.body.appendChild(message);
     document.querySelector('#secret-word').removeEventListener('click', showMessage2);
     window.scrollTo(0,document.body.scrollHeight);
