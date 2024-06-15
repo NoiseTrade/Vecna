@@ -48,6 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.querySelector('#secret-word').addEventListener('click', showMessage2);
 
+  //Nyx secret message
+  function nyxMessage() {
+    const message = document.createElement('p');
+    message.textContent = 'The orc is the culprit. His mind is lost.';
+    document.body.appendChild(message);
+    document.querySelector('#nyx-secret').removeEventListener('click', nyxMessage);
+    window.scrollTo(0,document.body.scrollHeight);
+  }
+
+  document.querySelector('#nyx-secret').addEventListener('click', nyxMessage);
+
   // Play/Pause background audio
   audioControlButton.addEventListener('click', function() {
     if (audio.paused) {

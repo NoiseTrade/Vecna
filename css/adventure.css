@@ -1,0 +1,148 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: linear-gradient(-45deg, rgba(52,29,78,1) 0%, rgba(97,94,168,1) 50%, rgba(210,82,123,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+p, label, button { 
+    color: goldenrod;
+    font-family: "Lora", sans-serif;
+		letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+p {
+		margin: 10px;
+}
+
+h1, h2, h3 {
+    color: goldenrod;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 700;
+}
+
+a {
+		color: goldenrod;
+		text-decoration: underline;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    & .story-text {
+        max-width: 786px;
+        margin-bottom: 20px;
+       
+        & p {
+            font-size: 16px;
+            margin: 10px;
+        }  
+    }
+}
+
+.choices {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.heading-container { 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+#audio-control {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #toggleAudio {
+    display: none;
+  }
+
+  .secret-message {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+	.choice {
+		background: none;
+		border: 2px solid goldenrod;
+		border-radius: 10px;
+		width: 50%;
+		margin: 5px;
+
+	}
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+
+/* .fadeInAnimated {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+#part-2 {
+  animation-delay: 6s;
+}
+
+#part-3 {
+  animation-delay: 8s;
+}
+
+#part-4 {
+  animation-delay: 10s;
+}
+
+#part-5 {
+  animation-delay: 12s;
+}
+
+#part-6 {
+  animation-delay: 14s;
+}
+
+#choices {
+	margin-bottom: 20px;
+	animation-delay: 12s;
+}
+
+#choice-1 {
+	animation-delay: 0.5s;
+}
+
+ #choice-2 {
+	animation-delay: 0.5s;
+} */
+

@@ -38,17 +38,36 @@ p, label {
     font-size: large;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: goldenrod;
     font-family: "MedievalSharp", cursive;
     font-weight: 700;
 }
 
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    & .story-text {
+        max-width: 786px;
+        margin-bottom: 20px;
+       
+        & p {
+            font-size: 16px;
+            margin: 10px;
+        }  
+    }
+}
+
+.choices {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 .heading-container { 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     text-align: center; 
     margin-top: 50px; 
 }
