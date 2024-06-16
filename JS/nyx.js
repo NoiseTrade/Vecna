@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function nyxMessage() {
       const message = document.createElement('p');
       message.className = 'secret-message';
-      message.textContent = 'The orc is the culprit. His mind is lost.';
+      message.textContent = 'They killed the villagers. They have lost their mind.';
       document.body.appendChild(message);
       document.querySelector('#nyx-secret').removeEventListener('click', nyxMessage);
       window.scrollTo(0,document.body.scrollHeight);

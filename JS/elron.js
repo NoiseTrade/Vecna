@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function elronMessage() {
       const message = document.createElement('p');
       message.className = 'secret-message';
-      message.textContent = 'If she speaks to you in a certain tongue. You will become cursed.';
+      message.textContent = 'They fight because they do not want to be left alone again.';
       document.body.appendChild(message);
       document.querySelector('#elron-secret').removeEventListener('click', elronMessage);
       window.scrollTo(0,document.body.scrollHeight);
