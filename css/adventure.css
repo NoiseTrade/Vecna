@@ -101,7 +101,7 @@ a {
 
 
 
-/* .fadeInAnimated {
+.fadeInAnimated {
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
@@ -137,5 +137,5 @@ a {
 
  #choice-2 {
 	animation-delay: 0.5s;
-} */
+}
 
