@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function nylaMessage() {
       const message = document.createElement('p');
       message.className = 'secret-message';
-      message.textContent = 'Add a secret message here ;)';
+      message.textContent = 'They want to escape. They want their life back.';
       document.body.appendChild(message);
       document.querySelector('#nyla-secret').removeEventListener('click', nylaMessage);
       window.scrollTo(0,document.body.scrollHeight);
